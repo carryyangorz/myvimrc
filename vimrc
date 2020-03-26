@@ -13,6 +13,8 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 
 
+call vundle#end()
+filetype plugin indent on
 map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
@@ -30,8 +32,6 @@ func! CompileRunGcc()
     endif
 endfunc
 
-call vundle#end()
-filetype plugin indent on
 
 
 "vim settings
